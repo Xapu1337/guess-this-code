@@ -3,7 +3,6 @@ module.exports = {
     'mantine',
     'plugin:@next/next/recommended',
     'plugin:jest/recommended',
-    'plugin:storybook/recommended',
   ],
   plugins: ['testing-library', 'jest'],
   overrides: [
@@ -17,5 +16,9 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'no-continue': 'off',
+    'no-plusplus': 'off',
+    'no-await-in-loop': 'off',
+    'max-len': 'off',
   },
 };

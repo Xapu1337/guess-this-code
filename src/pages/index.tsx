@@ -234,10 +234,10 @@ export default function HomePage() {
   if (lives <= 0) {
     return (
       <Container>
-        <Title order={1} align="center" mt="xl">
+        <Title order={1} p="center" mt="xl">
           Game Over
         </Title>
-        <Text align="center" mt="md">
+        <Text p="center" mt="md">
           Your final score was: <strong>{score}</strong>
         </Text>
         <Container mt="md" style={{ display: 'flex', justifyContent: 'center' }}>
@@ -252,7 +252,7 @@ export default function HomePage() {
       {loading && (
         <>
           <LoadingOverlay visible />
-          <Text align="center" mt="lg" weight={500}>
+          <Text p="center" mt="lg" w={500}>
             {loadingMessage}
           </Text>
         </>
@@ -278,17 +278,17 @@ export default function HomePage() {
             )}
           </Transition>
 
-          <Group position="center">
+          <Group p="center">
             <Title order={2}>Guess the Language</Title>
           </Group>
-          <Group position="center">
+          <Group p="center">
             <Text>Score: {score}</Text>
             <Text>Lives: {lives}</Text>
             <Text>Streak: {streak}</Text>
             <Text>Time Left: {timer}s</Text>
           </Group>
 
-          <Group position="center" mt="md">
+          <Group p="center" mt="md">
             {options.map((lang) => (
               <Button key={lang} onClick={() => handleGuess(lang)}>
                 {lang}

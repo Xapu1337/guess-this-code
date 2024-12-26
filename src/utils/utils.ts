@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { Gist, GistFetched, GistFile } from '../types/Gist';
+import { Gist, GistFetched, GistFile } from '../../types/Gist';
 
 export const Utils = {
   IGNORED_LANGUAGES: [

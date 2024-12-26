@@ -12,7 +12,7 @@ const theme = createTheme({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider theme={theme} defaultColorScheme='dark' withGlobalStyles withNormalizeCSS>
+    <MantineProvider theme={theme} defaultColorScheme='dark' withGlobalClasses withStaticClasses withCssVariables>
       <Component {...pageProps} />
     </MantineProvider>
   );
